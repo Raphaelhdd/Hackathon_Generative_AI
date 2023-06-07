@@ -1,4 +1,6 @@
 import os.path
+from typing import Optional
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -11,12 +13,21 @@ import seaborn as sns
 COLUMNS_TO_DROP = []
 
 
-def heat_map_correlation():
+def preprocess_data(X: pd.DataFrame, y: Optional[pd.Series] = None):
+    X = X.drop(columns=COLUMNS_TO_DROP)
+    X = X[X.notnull()]
+    duplicates = X.duplicated()
+    X = X[~duplicates]
+    return X
+
+
+
+def heat_map_correlation(X):
     '''
     This function creates a heatmap to understand the correlation between columns and understand which one to delete
     It prints the column that we need to delete (correlation >0.8)
     '''
-    correlation = df.corr()
+    correlation = X.corr()
     fig, ax = plt.subplots(figsize=(20, 20))
     sns.heatmap(correlation, cmap='coolwarm', annot=True, ax=ax)
 
@@ -37,6 +48,5 @@ def heat_map_correlation():
 if __name__ == "__main__":
     np.random.seed(0)
     df = pd.read_csv("train.feats.csv")
-    df = df.drop(columns=COLUMNS_TO_DROP)
-
-    heat_map_correlation()
+    df = preprocess_data(df)
+    heat_map_correlation(df)
