@@ -177,11 +177,11 @@ def fill_data(X, y):
 
 
 if __name__ == '__main__':
-    features_train_path = 'Mission 2 - Breast Cancer/train.feats.csv'
+    features_train_path = 'train.feats.csv'
     features_train_data = pd.read_csv(features_train_path)
     X_train = load_data(features_train_data)
 
-    labels_train_path = "Mission 2 - Breast Cancer/train.labels.0.csv"
+    labels_train_path = "train.labels.0.csv"
     y_train = pd.read_csv(labels_train_path)
     y_train = y_train["אבחנה-Location of distal metastases"].apply(ast.literal_eval).to_numpy()
     mlb = MultiLabelBinarizer()
