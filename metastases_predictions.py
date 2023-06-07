@@ -10,14 +10,25 @@ pio.templates.default = "simple_white"
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-COLUMNS_TO_DROP = []
+COLUMNS_TO_DROP = [" Form Name", "User Name", "id-hushed_internalpatientid"]
 
 
 def preprocess_data(X: pd.DataFrame, y: Optional[pd.Series] = None):
+    # global mean_values
     X = X.drop(columns=COLUMNS_TO_DROP)
     X = X[X.notnull()]
+    # X = X.dropna(subset=[" Hospital"])
+    # X[" Hospital"] = X[" Hospital"].astype(float)
+    # X = X.reset_index(drop=True)
     duplicates = X.duplicated()
     X = X[~duplicates]
+    # mean_values = X.mean(numeric_only=True)
+
+
+    for col in df.columns.tolist():
+        if 'Age' in col:
+            X = X[X[col].isin([0, 130])]
+
     return X
 
 
@@ -32,7 +43,7 @@ def heat_map_correlation(X):
     sns.heatmap(correlation, cmap='coolwarm', annot=True, ax=ax)
 
     # Find highly correlated features
-    threshold = 0.6
+    threshold = 0.8
     correlated_features = set()
     for i in range(len(correlation.columns)):
         for j in range(i):
@@ -47,6 +58,16 @@ def heat_map_correlation(X):
 
 if __name__ == "__main__":
     np.random.seed(0)
-    df = pd.read_csv("train.feats.csv")
+    df = pd.read_csv("train.feats.csv",low_memory=False)
+    # print(df.columns.tolist())
     df = preprocess_data(df)
-    heat_map_correlation(df)
+    for col in df.columns.tolist():
+        print(f"|{col}|")
+        print(col, df[col].unique())
+        print()
+
+
+    # print(df["Hospital"])
+    # print(df.columns.tolist())
+    # df = preprocess_data(df)
+    # heat_map_correlation(df)
