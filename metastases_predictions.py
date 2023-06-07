@@ -11,6 +11,23 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 COLUMNS_TO_DROP = [" Form Name", "User Name", "id-hushed_internalpatientid"]
+THRESHOLD = 0.75
+NUMERIC_COLUMN = ['אבחנה-Age',' Hospital', 'אבחנה-Nodes exam','אבחנה-Positive nodes']
+
+
+def columns_null(X, threshold=0.75):
+    columns_to_drop = []
+    for column in X.columns:
+        if float(null_counts[column] / (null_counts[column]+not_null_counts[column])) > threshold:
+            columns_to_drop.append(column)
+    return columns_to_drop
+
+
+def replace_null_with_mean(X, numeric_columns):
+    for col in numeric_columns:
+        mean_value = X[col].mean()
+        X[col].fillna(mean_value, inplace=True)
+    return X
 
 
 def preprocess_data(X: pd.DataFrame, y: Optional[pd.Series] = None):
