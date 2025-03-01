@@ -1,163 +1,162 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<!--begin::Head-->
+<!-- Page de l'inscription (Sign Up) -->
+<html lang="fr">
+<!-- Début::Head -->
 <head>
-    <title>Unicorn - sign-up</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
-    <meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
-    <meta property="og:url" content="https://keenthemes.com/metronic" />
-    <meta property="og:site_name" content="Keenthemes | Metronic" />
-    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-    <!--begin::Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-    <!--end::Fonts-->
-    <!--begin::Global Stylesheets Bundle(used by all pages)-->
-    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-    <!--end::Global Stylesheets Bundle-->
+    <title>Unicorn - inscription</title> <!-- Titre de la page -->
+    <meta charset="utf-8" /> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="description" content="Le thème d'administration Bootstrap le plus avancé sur Themeforest, utilisé par 94 000 débutants et professionnels. Démo multiple, mode sombre, support RTL et versions complètes pour React, Angular, Vue et Laravel. Obtenez votre copie maintenant et recevez des mises à jour à vie gratuitement." /> <!-- Description de la page pour les moteurs de recherche -->
+    <meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, thèmes d'administration, design web, figma, développement web, modèles gratuits, thèmes administratifs gratuits, thème bootstrap, modèle bootstrap, tableau de bord bootstrap, mode sombre bootstrap, bouton bootstrap, datepicker bootstrap, timepicker bootstrap, fullcalendar, datatables, flaticon" /> <!-- Mots-clés pour SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Assure un affichage adapté aux appareils mobiles -->
+    <meta property="og:locale" content="fr_FR" /> <!-- Propriété Open Graph pour la langue -->
+    <meta property="og:type" content="article" /> <!-- Type Open Graph (article dans ce cas) -->
+    <meta property="og:title" content="Metronic - Thème de tableau de bord Bootstrap 5 HTML, VueJS, React, Angular et Laravel" /> <!-- Titre Open Graph -->
+    <meta property="og:url" content="https://keenthemes.com/metronic" /> <!-- URL Open Graph -->
+    <meta property="og:site_name" content="Keenthemes | Metronic" /> <!-- Nom du site Open Graph -->
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" /> <!-- Lien canonique pour le SEO -->
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" /> <!-- Favicon pour la page -->
+    <!-- Début::Polices -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" /> <!-- Lien vers la police Poppins -->
+    <!-- Fin::Polices -->
+    <!-- Début::Feuilles de style globales (utilisées par toutes les pages) -->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" /> <!-- Feuilles de style globales pour les plugins -->
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" /> <!-- Styles principaux de la page -->
+    <!-- Fin::Feuilles de style globales -->
     <style>
         body {
-            background-image: url('assets/images/background.png');
-            background-size: cover;
+            background-image: url('assets/images/background.png'); /* Image de fond de la page */
+            background-size: cover; /* Assure que l'image couvre toute la page */
         }
     </style>
 </head>
-<!--end::Head-->
-<!--begin::Body-->
+<!-- Fin::Head -->
+
+<!-- Début::Body -->
 <body id="kt_body" class="bg-body">
-<!--begin::Main-->
-<!--begin::Root-->
+<!-- Début::Main -->
+<!-- Début::Root -->
 <div class="d-flex flex-column flex-root">
-    <!--begin::Authentication - Sign-up -->
-    <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(assets/media/illustrations/sketchy-1/14.png">
-        <!--begin::Content-->
+    <!-- Début::Authentification - Inscription -->
+    <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url('assets/media/illustrations/sketchy-1/14.png');">
+        <!-- Début::Contenu -->
         <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
-            <!--begin::Logo-->
+            <!-- Début::Logo -->
             <a class="mb-10 pt-lg-10">
-                <img alt="Logo" src="assets/images/unicorn.png" class="h-150px mb-5" />
+                <img alt="Logo" src="assets/images/unicorn.png" class="h-150px mb-5" /> <!-- Logo affiché ici -->
             </a>
-            <!--end::Logo-->
+            <!-- Fin::Logo -->
 
-            <!--begin::Wrapper-->
+            <!-- Début::Wrapper -->
             <div class="w-lg-600px rounded p-10 p-lg-15 mx-auto">
-                <!--begin::Form-->
+                <!-- Début::Formulaire -->
                 <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form">
-                    <!--begin::Heading-->
+                    <!-- Début::En-tête -->
                     <div class="mb-10 text-center">
-                        <!--begin::Title-->
-                        <h1 class="text-dark mb-3">Create an Account</h1>
-                        <!--end::Title-->
-                        <!--begin::Link-->
-                        <div class="text-gray-400 fw-bold fs-4">Already have an account?
-                            <a href="index.html" class="link-primary fw-bolder">Sign in here</a></div>
-                        <!--end::Link-->
+                        <!-- Titre -->
+                        <h1 class="text-dark mb-3">Créer un compte</h1> <!-- Titre de la section -->
+                        <!-- Lien -->
+                        <div class="text-gray-400 fw-bold fs-4">Vous avez déjà un compte ?
+                            <a href="index.html" class="link-primary fw-bolder">Se connecter ici</a></div> <!-- Lien vers la page de connexion -->
                     </div>
-                    <!--end::Heading-->
+                    <!-- Fin::En-tête -->
 
-                    <!--begin::Input group-->
+                    <!-- Début::Groupe de champs (prénom, nom) -->
                     <div class="row fv-row mb-7">
-                        <!--begin::Col-->
+                        <!-- Colonne pour le prénom -->
                         <div class="col-xl-6">
-                            <label class="form-label fw-bolder text-dark fs-6">First Name</label>
-                            <input class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="first-name" autocomplete="off" />
+                            <label class="form-label fw-bolder text-dark fs-6">Prénom</label>
+                            <input class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="first-name" autocomplete="off" /> <!-- Champ de saisie pour le prénom -->
                         </div>
-                        <!--end::Col-->
-                        <!--begin::Col-->
+                        <!-- Fin::Colonne -->
+                        <!-- Colonne pour le nom -->
                         <div class="col-xl-6">
-                            <label class="form-label fw-bolder text-dark fs-6">Last Name</label>
-                            <input class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="last-name" autocomplete="off" />
+                            <label class="form-label fw-bolder text-dark fs-6">Nom</label>
+                            <input class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="last-name" autocomplete="off" /> <!-- Champ de saisie pour le nom -->
                         </div>
-                        <!--end::Col-->
+                        <!-- Fin::Colonne -->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!-- Fin::Groupe de champs -->
+
+                    <!-- Début::Groupe de champs pour l'email -->
                     <div class="fv-row mb-7">
                         <label class="form-label fw-bolder text-dark fs-6">Email</label>
-                        <input class="form-control form-control-lg form-control-solid" type="email" placeholder="" name="email" autocomplete="off" />
+                        <input class="form-control form-control-lg form-control-solid" type="email" placeholder="" name="email" autocomplete="off" /> <!-- Champ de saisie pour l'email -->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!-- Fin::Groupe de champs -->
+
+                    <!-- Début::Groupe de champs pour le mot de passe -->
                     <div class="mb-10 fv-row" data-kt-password-meter="true">
-                        <!--begin::Wrapper-->
+                        <!-- Début::Wrapper -->
                         <div class="mb-1">
-                            <!--begin::Label-->
-                            <label class="form-label fw-bolder text-dark fs-6">Password</label>
-                            <!--end::Label-->
-                            <!--begin::Input wrapper-->
+                            <!-- Label -->
+                            <label class="form-label fw-bolder text-dark fs-6">Mot de passe</label>
+                            <!-- Wrapper de l'input -->
                             <div class="position-relative mb-3">
-                                <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password" autocomplete="off" />
+                                <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password" autocomplete="off" /> <!-- Champ de saisie pour le mot de passe -->
                                 <span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
-											<i class="bi bi-eye-slash fs-2"></i>
-											<i class="bi bi-eye fs-2 d-none"></i>
-										</span>
+                                            <i class="bi bi-eye-slash fs-2"></i> <!-- Icône pour masquer le mot de passe -->
+                                            <i class="bi bi-eye fs-2 d-none"></i> <!-- Icône pour afficher le mot de passe -->
+                                        </span>
                             </div>
-                            <!--end::Input wrapper-->
-                            <!--begin::Meter-->
+                            <!-- Fin::Wrapper -->
+
+                            <!-- Début::Indicateur de sécurité du mot de passe -->
                             <div class="d-flex align-items-center mb-3" data-kt-password-meter-control="highlight">
-                                <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
+                                <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div> <!-- Indicateur de la sécurité du mot de passe -->
                                 <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
                                 <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
                                 <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px"></div>
                             </div>
-                            <!--end::Meter-->
+                            <!-- Fin::Indicateur -->
                         </div>
-                        <!--end::Wrapper-->
-                        <!--begin::Hint-->
-                        <div class="text-muted">Use 8 or more characters with a mix of letters, numbers &amp; symbols.</div>
-                        <!--end::Hint-->
+                        <!-- Fin::Wrapper -->
+                        <!-- Astuce pour le mot de passe -->
+                        <div class="text-muted">Utilisez 8 caractères ou plus avec un mélange de lettres, chiffres et symboles.</div>
+                        <!-- Fin::Astuce -->
                     </div>
-                    <!--end::Input group=-->
-                    <!--begin::Input group-->
+                    <!-- Fin::Groupe de champs -->
+
+                    <!-- Début::Groupe de champs pour la confirmation du mot de passe -->
                     <div class="fv-row mb-5">
-                        <label class="form-label fw-bolder text-dark fs-6">Confirm Password</label>
-                        <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="confirm-password" autocomplete="off" />
+                        <label class="form-label fw-bolder text-dark fs-6">Confirmer le mot de passe</label>
+                        <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="confirm-password" autocomplete="off" /> <!-- Champ de saisie pour confirmer le mot de passe -->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!-- Fin::Groupe de champs -->
+
+                    <!-- Début::Groupe pour accepter les conditions -->
                     <div class="fv-row mb-10">
                         <label class="form-check form-check-custom form-check-solid form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="toc" value="1" />
-                            <span class="form-check-label fw-bold text-gray-700 fs-6">I Agree
-									<a href="#" class="ms-1 link-primary">Terms and conditions</a>.</span>
+                            <input class="form-check-input" type="checkbox" name="toc" value="1" /> <!-- Case à cocher pour accepter les conditions -->
+                            <span class="form-check-label fw-bold text-gray-700 fs-6">J'accepte les
+                                    <a href="#" class="ms-1 link-primary">Termes et conditions</a>.</span> <!-- Lien vers les termes et conditions -->
                         </label>
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Actions-->
+                    <!-- Fin::Groupe -->
+
+                    <!-- Début::Actions -->
                     <div class="text-center">
                         <div class="text-center">
-                            <a href="give-your-idea.html" class="btn btn-lg btn-primary fw-bolder">Sign in</a>
+                            <a href="give-your-idea.html" class="btn btn-lg btn-primary fw-bolder">S'inscrire</a> <!-- Bouton pour soumettre l'inscription -->
                         </div>
                     </div>
-                    <!--end::Actions-->
+                    <!-- Fin::Actions -->
                 </form>
-                <!--end::Form-->
+                <!-- Fin::Formulaire -->
             </div>
-            <!--end::Wrapper-->
+            <!-- Fin::Wrapper -->
         </div>
-        <!--end::Content-->
-
     </div>
-    <!--end::Authentication - Sign-up-->
+    <!-- Fin::Authentification - Inscription -->
 </div>
-<!--end::Root-->
-<!--end::Main-->
-<!--begin::Javascript-->
-<script>var hostUrl = "assets/";</script>
-<!--begin::Global Javascript Bundle(used by all pages)-->
-<script src="assets/plugins/global/plugins.bundle.js"></script>
-<script src="assets/js/scripts.bundle.js"></script>
-<!--end::Global Javascript Bundle-->
-<!--begin::Page Custom Javascript(used by this page)-->
-<script src="assets/js/custom/authentication/sign-up/general.js"></script>
-<!--end::Page Custom Javascript-->
-<!--end::Javascript-->
+<!-- Fin::Root -->
+<!-- Fin::Main -->
+
+<!-- Début::Javascript -->
+<script>var hostUrl = "assets/";</script> <!-- URL de base pour les ressources -->
+<!-- Début::Plugins -->
+<script src="assets/plugins/global/plugins.bundle.js"></script> <!-- Chargement des plugins -->
+<script src="assets/js/scripts.bundle.js"></script> <!-- Chargement des scripts -->
+<!-- Fin::Plugins -->
 </body>
-<!--end::Body-->
+<!-- Fin::Body -->
 </html>
