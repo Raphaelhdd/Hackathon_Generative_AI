@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>esports &amp; Gaming Portal - esports Games</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sports Club, League and micro-tournaments">
+    <!--    <meta name="author" content="Dan Fisher">-->
+    <meta name="keywords" content="sports games esports">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/images/points-up.png">
+    <link rel="apple-touch-icon" sizes="120x120"  href="assets/images/points-up.png">
+    <link rel="apple-touch-icon" sizes="152x152"  href="assets/images/points-up.png">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+    <!-- Google Web Fonts
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/vendor/slick/slick.css" rel="stylesheet">
+
+    <!-- Template CSS-->
+    <link href="assets/css/style-esports.css" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Particles Background CSS-->
+    <link rel="stylesheet" media="screen" href="assets/css/style-particles.css">
+    <style>
+        body{
+            background-image: url('/assets/images/Fondo6.jpg');
+        }
+    </style>
+</head>
+<body class="template-esports">
+
+<div class="site-wrapper clearfix">
+    <div class="site-overlay"></div>
+
+    <!-- Header
+        ================================================== -->
+
+    <!-- Header Mobile -->
+
+    <div class="header-mobile clearfix" id="header-mobile">
+        <div class="header-mobile__logo">
+            <a href="."><img src="assets/images/points-up.png" srcset="assets/images/points-up.png 2x" alt="#" class="header-mobile__logo-img"></a>
+        </div>
+        <div class="header-mobile__inner">
+            <a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
+        </div>
+    </div>
+    <!-- Header Mobile / End -->
+
+    <!-- Header Desktop -->
+    <header class="header header--layout-4">
+
+        <!-- Header Top Bar -->
+        <div class="header__top-bar clearfix">
+            <div class="container">
+                <div class="header__top-bar-inner">
+
+                    <!-- Social Links -->
+                    <ul class="social-links social-links--inline social-links--main-nav social-links--top-bar">
+
+                        <li class="social-links__item">
+                            <a href="login.html" class="social-links__link" data-toggle="tooltip" onclick = "logout()" data-placement="bottom" title="Sign out"><i class="fa fa fa-sign-out"></i></a>
+                        </li>
+                        <li class="social-links__item">
+                            <a class="social-links__link" data-toggle="tooltip" onclick = "modo_noche()" data-placement="bottom" title="Dark / Light Mode"><i id='item-color' class="fa fa fa-sun-o"></i></a>
+                        </li>
+                    </ul>
+                    <!-- Social Links / End -->
+
+                    <!-- Account Navigation -->
+                    <ul class="nav-account">
+                        <li id="wallet"  class="nav-account__item"><a href="wallet.html" ><i class="fa fa icon-wallet"></i>&nbsp Wallet</a></li>
+                        <li id="profile-header"  class="nav-account__item nav-account__item--logout"><a href="profile.html" ><figure class="team-meta__logo profile-header-image"></figure>&nbsp Profile</a></li>
+<!--                        <li id="log-header" class="nav-account__item" ><a onclick="logout()" href="login.html" >Login / Register</a></li>-->
+                    </ul>
+                    <!-- Account Navigation / End -->
+                </div>
+            </div>
+        </div>
+        <!-- Header Top Bar / End -->
+
+
+
+
+        <!-- Header Primary -->
+        <div class="header__primary header__primary--center">
+            <div class="container">
+                <div class="header__primary-inner">
+
+                    <!-- Main Navigation -->
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+<!--                            <li class="log-in-element"><a id="1" style="color: gray" onmouseover="in_color(this.id)" onmouseleave="out_color(this.id)" href="."><i class="fa fa-home"></i> &nbsp Home</a></li>-->
+                            <li ><a id="6" style="color: gray" onmouseover="in_color(this.id)" onmouseleave="out_color(this.id)" href="fight.html"><i class="fa fa-gamepad"></i> &nbsp Fight</a></li>
+                            <!--								<li class=""><a href="_esports_event-tournament.html">Tournaments</a></li>-->
+                            <li ><a id="2" style="color: gray" onmouseover="in_color(this.id)" onmouseleave="out_color(this.id)" href="team.html"><i class="fa fa-group"></i> &nbsp Team</a></li>
+                            <!--								<li class=""><a href="_esports_page-contacts.html">Contact Us</a></li>-->
+                            <li ><a id="3" style="color: gray" onmouseover="in_color(this.id)" onmouseleave="out_color(this.id)" href="ranking_individual.html"><i class="fa fa-trophy"></i> &nbsp Ranking</a>
+                                <ul class="main-nav__sub">
+                                    <li class=""><a id="4" style="color: gray" onmouseover="in_color(this.id)" onmouseleave="out_color(this.id)" href="ranking_individual.html"><i class="fa fa-user"></i> &nbsp&nbspLone Wolf - 1 VS 1</a></li>
+                                    <li  class=""><a id="5" style="color: gray" onmouseover="in_color(this.id)" onmouseleave="out_color(this.id)" href="ranking_squad.html"><i class="fa fa-group"></i> &nbsp&nbspSquad</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <!-- Main Navigation / End -->
+                    <!-- Header Info Block -->
+                    <ul class="info-block info-block--header" >
+
+                        <li class="info-block__item info-block__item--shopping-cart js-info-block__item--onclick">
+                            <!--                            attention to log-out element-->
+                            <a href="wallet.html" class="info-block__link-wrapper log-out-element">
+                                <svg role="img" class="df-icon df-icon--shopping-cart">
+                                    <use xlink:href="assets/images/esports/icons-esports.svg#trophy"/>
+                                </svg>
+                                <h6 class="info-block__heading">points</h6>
+                                <span class="info-block__cart-sum">260,30€</span>
+                            </a>
+
+                            <!-- Dropdown Shopping Cart -->
+                            <ul class="header-cart header-cart--inventory log-out-element">
+
+                                <li class="header-cart__item header-cart__item--title">
+                                    <h5>Total points</h5>
+                                </li>
+
+                                <li class="header-cart__item">
+                                    <figure class="header-cart__product-thumb">
+                                        <a href="_esports_shop-product.html">
+                                            <img src="assets/images/Copper.png" alt="Tech Warrior Framed Art Print">
+                                        </a>
+                                    </figure>
+                                    <div class="header-cart__badges">
+                                        <span class="badge badge-primary">4</span>
+                                    </div>
+                                </li>
+                                <li class="header-cart__item">
+                                    <figure class="header-cart__product-thumb">
+                                        <a href="_esports_shop-product.html">
+                                            <img src="assets/images/Purple.png" alt="Tech Warrior Framed Art Print">
+                                        </a>
+                                    </figure>
+                                    <div class="header-cart__badges">
+                                        <span class="badge badge-primary">34</span>
+                                    </div>
+                                </li>
+                                <li class="header-cart__item">
+                                    <figure class="header-cart__product-thumb">
+                                        <a href="_esports_shop-product.html">
+                                            <img src="assets/images/Pink.png" alt="Tech Warrior Framed Art Print">
+                                        </a>
+                                    </figure>
+                                    <div class="header-cart__badges">
+                                        <span class="badge badge-primary">2</span>
+                                    </div>
+                                </li>
+                                <li class="header-cart__item">
+                                    <figure class="header-cart__product-thumb">
+                                        <a href="_esports_shop-product.html">
+                                            <img src="assets/images/Blue.png" alt="Tech Warrior Framed Art Print">
+                                        </a>
+                                    </figure>
+                                    <div class="header-cart__badges">
+                                        <span class="badge badge-primary">17</span>
+                                    </div>
+                                </li>
+
+                                <li class="header-cart__item header-cart__item--subtotal">
+                                    <span class="header-cart__subtotal">Subtotal</span>
+                                    <span class="header-cart__subtotal-sum">260,30€</span>
+                                </li>
+                                <li class="header-cart__item header-cart__item--action">
+                                    <a href="_esports_shop-cart.html" class="btn btn-primary-inverse btn-block">Buy more</a>
+                                    <a href="_esports_shop-checkout.html" class="btn btn-primary btn-block">Checkout</a>
+                                </li>
+                            </ul>
+                            <!-- Dropdown Shopping Cart / End -->
+
+                        </li>
+                    </ul>
+                    <!-- Header Info Block / End -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Primary / End -->
+
+    </header>
+    <!-- Header / End -->
+
+    <!-- Page Heading
+    ================================================== -->
+    <div class="page-heading page-heading--horizontal page-heading--duotone">
+        <div class="container" >
+            <div class="row">
+                <div class="col align-self-start" style="margin-bottom:20px;">
+                    <h1 class="page-heading__title"><span class="highlight"><i class="fa icon-wallet" ></i>&nbsp Wallet</span></h1>
+
+                </div>
+                <div class="col-lg-3" style="background-color: transparent">
+                    <aside class="widget card widget--sidebar widget-standings" style="background-color: transparent; border-radius: 15px">
+                        <div class="widget__content card__content" >
+                            <div class="table-responsive" style="border-radius: 15px;">
+                                <table class="table table-hover table-standings" >
+                                    <tbody>
+
+                                    <tr class="highlighted" >
+                                        <td>
+                                            <div class="">
+                                                <figure class="team-meta__logo">
+                                                    <img src="assets/images/icons-up/Copper.png" alt="The Alchemists">
+                                                </figure>
+                                                <div class="team-meta__info">
+                                                    <h6 class="team-meta__name">Copper diamond</h6>
+                                                    <span class="team-meta__place">x50</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="font-size: 20px">=</td>
+                                        <td>
+                                            <div class="">
+                                                <figure class="team-meta__logo">
+                                                    <img src="assets/images/icons-up/Purple.png" alt="The Alchemists">
+                                                </figure>
+                                                <div class="team-meta__info">
+                                                    <h6 class="team-meta__name">Purple diamond</h6>
+                                                    <span class="team-meta__place">x1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-3" style="background-color: transparent">
+                    <aside class="widget card widget--sidebar widget-standings" style="background-color: transparent; border-radius: 15px">
+                        <div class="widget__content card__content" >
+                            <div class="table-responsive" style="border-radius: 15px;">
+                                <table class="table table-hover table-standings" >
+                                    <tbody>
+
+                                    <tr class="highlighted">
+                                        <td>
+                                            <div class="">
+                                                <figure class="team-meta__logo">
+                                                    <img src="assets/images/icons-up/Purple.png" alt="The Alchemists">
+                                                </figure>
+                                                <div class="team-meta__info">
+                                                    <h6 class="team-meta__name">Purple diamond</h6>
+                                                    <span class="team-meta__place">x100</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="font-size: 20px">=</td>
+                                        <td>
+                                            <div class="">
+                                                <figure class="team-meta__logo">
+                                                    <img src="assets/images/icons-up/Pink.png" alt="The Alchemists">
+                                                </figure>
+                                                <div class="team-meta__info">
+                                                    <h6 class="team-meta__name">Pink diamond</h6>
+                                                    <span class="team-meta__place">x1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!--                                <td>1 = 50</td>-->
+                                        <!--                                <td>26 - 11</td>-->
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-3" style="background-color: transparent">
+                    <aside class="widget card widget--sidebar widget-standings" style="background-color: transparent; border-radius: 15px">
+                        <div class="widget__content card__content" >
+                            <div class="table-responsive" style="border-radius: 15px;">
+                                <table class="table table-hover table-standings" >
+                                    <tbody>
+                                    <tr class="highlighted" >
+                                        <td>
+                                            <div class="">
+                                                <figure class="team-meta__logo">
+                                                    <img src="assets/images/icons-up/Pink.png" alt="The Alchemists">
+                                                </figure>
+                                                <div class="team-meta__info">
+                                                    <h6 class="team-meta__name">Pink diamond</h6>
+                                                    <span class="team-meta__place">x200</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="font-size: 20px">=</td>
+                                        <td>
+                                            <div class="">
+                                                <figure class="team-meta__logo">
+                                                    <img src="assets/images/icons-up/Blue.png" alt="The Alchemists">
+                                                </figure>
+                                                <div class="team-meta__info">
+                                                    <h6 class="team-meta__name">Blue diamond</h6>
+                                                    <span class="team-meta__place">x1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!--                                <td>1 = 50</td>-->
+                                        <!--                                <td>26 - 11</td>-->
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+
+
+                        <!-- Widget: Standings -->
+
+<!--                    </div>-->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-content">
+        <div class="container" >
+
+
+            <!--            <div  class="card" style="background-color: #7a7283">-->
+            <div class="row">
+                <div class="col-lg-2 col-3">
+                    <figure style="text-align: center; justify-content: center">
+                        <div class="card" style="background-color: black; border-radius: 20px">
+                             <span class="label posts__cat-label posts__cat-label--category-6" style="font-size: 100%; ">Amount: 120
+                            </span>
+
+                            <div class="posts__cat">
+                            <img src="assets/images/Copper.png" style="margin-bottom: 10px; ">
+                                <a href="#" class="btn btn-info btn-block cooper" style="border-color: #ffd3cf; ">Add more</a>
+
+                        </div>
+                        </div>
+
+                    </figure>
+                </div>
+                <div class="col-lg-2 col-3">
+                    <figure style="text-align: center; justify-content: center">
+                        <div  class="card" style="background-color: black; border-radius: 20px">
+                             <span class="label posts__cat-label posts__cat-label--category-6" style="font-size: 100%; ">Amount: 22
+                            </span>
+
+                            <div class="posts__cat">
+                                <img src="assets/images/Purple.png" style="margin-bottom: 10px; ">
+                                <a href="#" class="btn btn-info btn-block  purple-diamond">Add more</a>
+
+                            </div>
+                        </div>
+
+                    </figure>
+                </div>
+                <div class="col-lg-2 col-3">
+                    <figure style="text-align: center; justify-content: center">
+                        <div  class="card" style="background-color: black; border-radius: 20px">
+                            <span class="label posts__cat-label posts__cat-label--category-6" style="font-size: 100%; ">Amount: 14</span>
+                            <div class="posts__cat">
+                                <img src="assets/images/Pink.png" style="margin-bottom: 10px; ">
+                                <a href="#" class="btn btn-info btn-block  pink-diamond">Add more</a>
+
+                            </div>
+                        </div>
+
+                    </figure>
+                </div>
+                <div class="col-lg-2 col-3">
+                    <figure style="text-align: center; justify-content: center">
+                        <div  class="card" style="background-color: black; border-radius: 20px">
+                             <span class="label posts__cat-label posts__cat-label--category-6" style="font-size: 100%; ">Amount: 3
+                            </span>
+
+                            <div class="posts__cat">
+                                <img src="assets/images/Blue.png" style="margin-bottom: 10px; ">
+                                <a href="#" class="btn btn-info btn-block blue-diamond">Add more</a>
+                            </div>
+                        </div>
+
+                    </figure>
+                </div>
+                <div class="col-lg-4">
+                <!-- Schedule & Tickets -->
+                <div class="card card--has-table">
+                    <div class="card__header">
+                        <h4>Incomes</h4>
+                    </div>
+                    <div class="card__content">
+                        <div class="table-responsive">
+                            <table class="table table-hover team-schedule team-schedule--full">
+                                <thead>
+                                <tr>
+                                    <th class="team-schedule__date">Date</th>
+                                    <th class="team-schedule__prize">Prize</th>
+                                    <th class="team-schedule__tickets">Details</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="team-schedule__date">Two hours ago</td>
+<!--                                    <td class="team-schedule__prize">USD1.500.000</td>-->
+                                    <td class="team-schedule__versus">
+                                        <div class="team-meta">
+                                            <figure class="team-meta__logo">
+                                                <img src="assets/images/icons-up/Purple.png" alt="">
+                                            </figure>
+                                            <div class="team-meta__info">
+                                                <h6 class="team-meta__name" style="color: #00c0c1">+30</h6>
+                                                <span class="team-meta__place">Purple Diamond</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-schedule__tickets">
+                                        <a href="#" class="btn btn-xs btn-default-alt btn-block ">
+                                            See full info
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="team-schedule__date">Yesterday</td>
+                                    <!--                                    <td class="team-schedule__prize">USD1.500.000</td>-->
+                                    <td class="team-schedule__versus">
+                                        <div class="team-meta">
+                                            <figure class="team-meta__logo">
+                                                <img src="assets/images/icons-up/Copper.png" alt="">
+                                            </figure>
+                                            <div class="team-meta__info">
+                                                <h6 class="team-meta__name" style="color: #00c0c1">+157</h6>
+                                                <span class="team-meta__place">Copper Diamond</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-schedule__tickets">
+                                        <a href="#" class="btn btn-xs btn-default-alt btn-block ">
+                                            See full info
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="team-schedule__date">06 - 03 - 2022</td>
+                                    <!--                                    <td class="team-schedule__prize">USD1.500.000</td>-->
+                                    <td class="team-schedule__versus">
+                                        <div class="team-meta">
+                                            <figure class="team-meta__logo">
+                                                <img src="assets/images/icons-up/Pink.png" alt="">
+                                            </figure>
+                                            <div class="team-meta__info">
+                                                <h6 class="team-meta__name" style="color: pink">-2</h6>
+                                                <span class="team-meta__place">Pink Diamond</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-schedule__tickets">
+                                        <a href="#" class="btn btn-xs btn-default-alt btn-block ">
+                                            See full info
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="team-schedule__date">06 - 03 - 2022</td>
+                                    <!--                                    <td class="team-schedule__prize">USD1.500.000</td>-->
+                                    <td class="team-schedule__versus">
+                                        <div class="team-meta">
+                                            <figure class="team-meta__logo">
+                                                <img src="assets/images/icons-up/Pink.png" alt="">
+                                            </figure>
+                                            <div class="team-meta__info">
+                                                <h6 class="team-meta__name" style="color: pink">-17</h6>
+                                                <span class="team-meta__place">Pink Diamond</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-schedule__tickets">
+                                        <a href="#" class="btn btn-xs btn-default-alt btn-block ">
+                                            See full info
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav class="post-pagination" aria-label="Team navigation">
+                                <ul class="pagination pagination--circle justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li class="page-item active"><a style="background-color: #00c0c1" class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><span class="page-link">...</span></li>
+                                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Schedule & Tickets / End -->
+            </div>
+
+    </div>
+</div>
+
+<!-- Content / End -->
+
+<div id="particles-js"></div>
+
+<!-- Footer
+================================================== -->
+<footer id="footer" class="footer">
+
+
+    <!-- Sponsors -->
+    <div class="sponsors-wrapper">
+
+        <div class="container">
+            <div class="sponsors">
+                <ul class="sponsors-logos">
+                    <!--                        sponsors__item-->
+                    <li class="">
+                        <a href="https://latam.battlegrounds.pubg.com/" target="_blank"><img src="https://images.ctfassets.net/r5o0jpcspr8j/7LfUylNH3iDRr5fjarrmq2/bd89af48c332e448beb872e78519574f/pubg-small.svg?w=256&fit=fill" alt="Dark Game"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.rocketleague.com/" target="_blank"><img src="https://images.ctfassets.net/r5o0jpcspr8j/4OHuomVX4PmBQ6awGzxqvJ/60766163982342fd3a539ec677d802db/RL.svg?w=256&fit=fill" alt="GeniusGeek"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://blog.counter-strike.net/" target="_blank"><img src="https://images.ctfassets.net/r5o0jpcspr8j/2HQjh66QLZ4SlD2CWHkXhE/24a70d2334c51985c3a33167f0682e17/CSGO.svg?w=256&fit=fill" alt="GhostGames"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.leagueoflegends.com/" target="_blank"><img src="https://images.ctfassets.net/r5o0jpcspr8j/5h2post3QM6eI1K4QqXMcg/079e119edbb1e9e3a1ce644625157702/LOL.svg?w=256&fit=fill" alt="GameChat"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://playvalorant.com/" target="_blank"><img src="https://images.ctfassets.net/r5o0jpcspr8j/1sNcrtp6u48hUs4Ztk89Pw/bf9e06abd324bee8d9b28b3e4398d91d/Valorant.svg?w=256&fit=fill" alt="DragonFire"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.ea.com/games/apex-legends" target="_blank"><img src="https://images.ctfassets.net/r5o0jpcspr8j/3H8fYroxgbBg4PKrHyb9y8/31e614ae30ca018eb21f1556327e1033/Apex.svg?w=256&fit=fill" alt="eliteSound"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Sponsors / End -->
+
+    <!-- Footer Widgets -->
+    <div class="footer-widgets">
+        <div class="footer-widgets__inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <div class="footer-col-inner">
+                                    <!-- Widget: Links -->
+                                    <aside class="widget widget--footer widget_nav_menu">
+                                        <h4 class="widget__title">Useful Links</h4>
+                                        <div class="widget__content">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="widget__list">
+                                                        <li><a href="_esports_index.html">Home</a></li>
+                                                        <li><a href="_esports_blog-1.html">News Page</a></li>
+                                                        <li><a href="_esports_blog-post-1.html">Post Page</a></li>
+                                                        <li><a href="_esports_team-overview.html">Teams</a></li>
+                                                        <li><a href="_esports_team-last-results.html">Team Stats</a></li>
+                                                        <li><a href="_esports_team-roster.html">Roster</a></li>
+                                                        <li><a href="_esports_event-tournament.html">Tournament</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="widget__list">
+                                                        <li><a href="_esports_team-player.html">Player Bio</a>
+                                                        <li><a href="_esports_event-overview-1a.html">Match Stats</a>
+                                                        <li><a href="_esports_event-overview-1a.html">Live Stream</a>
+                                                        <li><a href="_esports_team-gallery.html">Gallery</a>
+                                                        <li><a href="_esports_team-videos.html">Videos</a>
+                                                        <li><a href="_esports_shop-fullwidth.html">Merchandise</a>
+                                                        <li><a href="_esports_features-shortcodes.html">Shortcodes</a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                    <!-- Widget: Links / End -->
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-3">
+                                <div class="footer-col-inner">
+                                    <!-- Widget: Links -->
+                                    <aside class="widget widget--footer widget_nav_menu">
+                                        <h4 class="widget__title">Streams</h4>
+                                        <div class="widget__content">
+                                            <ul class="widget__list">
+                                                <li><a href="_esports_team-player.html">The Destroy</a>
+                                                <li><a href="_esports_team-player.html">FayeDaBebop</a>
+                                                <li><a href="_esports_team-player.html">Crazzzy_80</a>
+                                                <li><a href="_esports_team-player.html">Game Huntress</a>
+                                                <li><a href="_esports_team-player.html">Logan-X</a>
+                                                <li><a href="_esports_team-player.html">Kelly_Spiegel9</a>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                    <!-- Widget: Links / End -->
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-3">
+                                <div class="footer-col-inner">
+                                    <!-- Widget: Pages -->
+                                    <aside class="widget widget--footer widget_pages">
+                                        <h4 class="widget__title">About Us</h4>
+                                        <div class="widget__content">
+                                            <ul class="widget__list">
+                                                <li><a href="_esports_page-contacts.html">Contact</a></li>
+                                                <li><a href="_esports_page-faqs.html">FAQs</a></li>
+                                                <li><a href="_esports_page-sponsors.html">Sponsors</a></li>
+                                                <li><a href="_esports_team-schedule.html">Next Events</a></li>
+                                                <li><a href="_esports_blog-post-3.html">Guides</a></li>
+                                                <li><a href="login.html">Register/Login</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                    <!-- Widget: Pages / End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-col-inner">
+
+                            <!-- Widget: Popular Posts / End -->
+                            <div class="widget widget--footer widget-popular-posts">
+                                <h4 class="widget__title">Popular News</h4>
+                                <div class="widget__content">
+                                    <ul class="posts posts--simple-list">
+
+                                        <li class="posts__item posts__item--category-4 ">
+                                            <figure class="posts__thumb posts__thumb--hover">
+                                                <a href="#"><img src="assets/images/esports/samples/post-img4-xs.jpg" alt=""></a>
+                                            </figure>
+                                            <div class="posts__inner">
+                                                <div class="posts__cat">
+                                                    <span class="label posts__cat-label posts__cat-label--category-4">Xenowatch</span>
+                                                </div>
+                                                <h6 class="posts__title posts__title--color-hover"><a href="_esports_blog-post-1.html">Xenowatch&#x27;s new patch will fix the faces bugs</a></h6>
+                                                <time datetime="2017-08-21" class="posts__date">August 27th, 2018</time>
+                                            </div>
+                                        </li>
+                                        <li class="posts__item posts__item--category-2 ">
+                                            <figure class="posts__thumb posts__thumb--hover">
+                                                <a href="#"><img src="assets/images/esports/samples/post-img2-xs.jpg" alt=""></a>
+                                            </figure>
+                                            <div class="posts__inner">
+                                                <div class="posts__cat">
+                                                    <span class="label posts__cat-label posts__cat-label--category-2">L.O. Heroes</span>
+                                                </div>
+                                                <h6 class="posts__title posts__title--color-hover"><a href="_esports_blog-post-1.html">A new mage character is coming to the League</a></h6>
+                                                <time datetime="2017-08-21" class="posts__date">July 16th, 2018</time>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Widget: Popular Posts / End -->
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-col-inner">
+
+                            <!-- Widget: Popular Posts / End -->
+                            <div class="widget widget--footer widget-popular-posts">
+                                <h4 class="widget__title">Featured News</h4>
+                                <div class="widget__content">
+                                    <ul class="posts posts--simple-list">
+
+                                        <li class="posts__item posts__item--category-1 posts__item--category-3 ">
+                                            <figure class="posts__thumb posts__thumb--hover">
+                                                <a href="#"><img src="assets/images/esports/samples/post-img3-xs.jpg" alt=""></a>
+                                            </figure>
+                                            <div class="posts__inner">
+                                                <div class="posts__cat">
+                                                    <span class="label posts__cat-label posts__cat-label--category-1">The Team</span><span class="label posts__cat-label posts__cat-label--category-3">Striker GO</span>
+                                                </div>
+                                                <h6 class="posts__title posts__title--color-hover"><a href="_esports_blog-post-1.html">The Team defeated the L.A. Pirates 2-1 in the Pro League...</a></h6>
+                                                <time datetime="2017-08-21" class="posts__date">September 24th, 2018</time>
+                                            </div>
+                                        </li>
+                                        <li class="posts__item posts__item--category-4 ">
+                                            <figure class="posts__thumb posts__thumb--hover">
+                                                <a href="#"><img src="assets/images/esports/samples/post-img13-xs.jpg" alt=""></a>
+                                            </figure>
+                                            <div class="posts__inner">
+                                                <div class="posts__cat">
+                                                    <span class="label posts__cat-label posts__cat-label--category-4">Xenowatch</span>
+                                                </div>
+                                                <h6 class="posts__title posts__title--color-hover"><a href="_esports_blog-post-1.html">New modes are coming in the April update</a></h6>
+                                                <time datetime="2017-08-21" class="posts__date">June 18th, 2018</time>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Widget: Popular Posts / End -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Widgets / End -->
+
+    <!-- Footer Social Links -->
+    <div class="footer-social">
+        <div class="container">
+            <ul class="footer-social__list list-unstyled">
+                <li class="footer-social__item">
+                    <a href="#" class="footer-social__link">
+								<span class="footer-social__icon">
+									<i class="fa fa-facebook-square"></i>
+								</span>
+                        <div class="footer-social__txt">
+                            <span class="footer-social__name">Facebook</span>
+                            <span class="footer-social__user">/portalgaming</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="footer-social__item">
+                    <a href="#" class="footer-social__link">
+								<span class="footer-social__icon">
+									<i class="fa fa-twitter"></i>
+								</span>
+                        <div class="footer-social__txt">
+                            <span class="footer-social__name">Twitter</span>
+                            <span class="footer-social__user">@portalgaming</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="footer-social__item">
+                    <a href="#" class="footer-social__link">
+								<span class="footer-social__icon">
+									<i class="fa fa-twitch"></i>
+								</span>
+                        <div class="footer-social__txt">
+                            <span class="footer-social__name">Twitch</span>
+                            <span class="footer-social__user">@portalgaming</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="footer-social__item">
+                    <a href="#" class="footer-social__link">
+								<span class="footer-social__icon">
+									<i class="fa fa-youtube-play"></i>
+								</span>
+                        <div class="footer-social__txt">
+                            <span class="footer-social__name">YouTube</span>
+                            <span class="footer-social__user">@portalgaming</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="footer-social__item">
+                    <a href="#" class="footer-social__link">
+								<span class="footer-social__icon">
+									<i class="fa fa-google-plus"></i>
+								</span>
+                        <div class="footer-social__txt">
+                            <span class="footer-social__name">Google+</span>
+                            <span class="footer-social__user">/portalgaming</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="footer-social__item">
+                    <a href="#" class="footer-social__link">
+								<span class="footer-social__icon">
+									<i class="fa fa-instagram"></i>
+								</span>
+                        <div class="footer-social__txt">
+                            <span class="footer-social__name">Instagram</span>
+                            <span class="footer-social__user">@portalgaming</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer Social Links / End -->
+</footer>
+<!-- Footer / End -->
+
+</div>
+
+<!-- Javascript Files
+	================================================== -->
+<!-- Core JS -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/core.js"></script>
+
+
+<!-- Vendor JS -->
+<script src="assets/vendor/twitter/jquery.twitter.js"></script>
+<script src="assets/vendor/jquery-duotone/jquery.duotone.min.js"></script>
+
+<!-- Firebase JS -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js"></script>
+
+<!-- Template JS -->
+<script src="assets/js/init.js"></script>
+
+<!-- scripts Particles-->
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/app-in.js"></script>
+
+
+<!-- Duotone Filters -->
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+    <filter id="duotone-filter-base">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.211764705882353 0.325490196078431"></feFuncR>
+            <feFuncG type="table" tableValues="0.168627450980392 0.262745098039216"></feFuncG>
+            <feFuncB type="table" tableValues="0.270588235294118 0.415686274509804"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-color-primary">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.113725490196078 0"></feFuncR>
+            <feFuncG type="table" tableValues="0.07843137254902 1"></feFuncG>
+            <feFuncB type="table" tableValues="0.16078431372549 0.3568627451"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-color-info">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.113725490196078 0"></feFuncR>
+            <feFuncG type="table" tableValues="0.07843137254902 0.870588235294118"></feFuncG>
+            <feFuncB type="table" tableValues="0.16078431372549 1"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-page-heading">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.113725490196078 0"></feFuncR>
+            <feFuncG type="table" tableValues="0.07843137254902 1"></feFuncG>
+            <feFuncB type="table" tableValues="0.16078431372549 0.3568627451"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-player-slider-blue">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.168627451 0.247058823529412"></feFuncR>
+            <feFuncG type="table" tableValues="0.133333333333333 0.203921568627451"></feFuncG>
+            <feFuncB type="table" tableValues="0.211764705882353 0.858823529411765"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-player-slider-green">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.168627451 0"></feFuncR>
+            <feFuncG type="table" tableValues="0.133333333333333 1"></feFuncG>
+            <feFuncB type="table" tableValues="0.211764705882353 0.356862745098039"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-player-slider-red">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.168627451 1"></feFuncR>
+            <feFuncG type="table" tableValues="0.133333333333333 0.109803921568627"></feFuncG>
+            <feFuncB type="table" tableValues="0.211764705882353 0.36078431372549"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-player-slider-gray">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.168627451 0.8549019608"></feFuncR>
+            <feFuncG type="table" tableValues="0.133333333333333 0.8549019608"></feFuncG>
+            <feFuncB type="table" tableValues="0.211764705882353 0.8549019608"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-player-slider-aqua">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.168627451 0.133333333333333"></feFuncR>
+            <feFuncG type="table" tableValues="0.133333333333333 0.866666666666667"></feFuncG>
+            <feFuncB type="table" tableValues="0.211764705882353 0.933333333333333"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+    <filter id="duotone-filter-player-slider-yellow">
+        <feColorMatrix type="matrix" result="grayscale"
+                       values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" >
+        </feColorMatrix>
+        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+            <feFuncR type="table" tableValues="0.168627451 1"></feFuncR>
+            <feFuncG type="table" tableValues="0.133333333333333 0.8"></feFuncG>
+            <feFuncB type="table" tableValues="0.211764705882353 0"></feFuncB>
+            <feFuncA type="table" tableValues="0 1"></feFuncA>
+        </feComponentTransfer>
+    </filter>
+</svg>
+<!-- Duotone Filters / End -->
+
+</body>
+</html>

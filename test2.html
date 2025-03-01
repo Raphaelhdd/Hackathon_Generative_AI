@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Empty Page with Fade-in Text Effect</title>
+  <style>
+    body {
+      background-image: url('assets/images/background.png'); /* Replace with your background image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .fade-in-text {
+      opacity: 0;
+      animation: fade-in 2s ease-in-out forwards;
+    }
+
+    @keyframes fade-in {
+      25% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<!--<h1 class="fade-in-text">Your centered text with fade-in effect</h1>-->
+
+<div class="fade-in-text" style="margin-top: 200px; margin-bottom: 300px; text-align: left; padding-left: ">
+  <input style="border: transparent;
+                    background-color: transparent;
+                    font-size: 64px;
+                    color: gray"
+         type="text"
+         name="idea"
+         placeholder="Enter your Idea..." />
+</div>
+</body>
+</html>

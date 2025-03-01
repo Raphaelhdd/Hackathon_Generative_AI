@@ -1,0 +1,9 @@
+{
+  "name": "Hackaton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gojs": "^2.3.7"
+  }
+}
